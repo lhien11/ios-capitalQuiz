@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Thin</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CaptialQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GPu-TY-DU5" userLabel="HeaderView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Og8-r7-rog" userLabel="ProgressView">
+                                        <rect key="frame" x="0.0" y="51" width="15" height="10"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="XX/25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CpH-bV-xAh">
+                                        <rect key="frame" x="15" y="15" width="60" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCJ-U6-Kji">
+                                        <rect key="frame" x="265" y="15" width="95" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ohf-f2-4AD">
+                                <rect key="frame" x="0.0" y="60" width="375" height="607"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Enz-ju-bme" userLabel="QuestionView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="303.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flag1" translatesAutoresizingMaskIntoConstraints="NO" id="rYl-65-Aye" userLabel="Flag">
+                                                <rect key="frame" x="15" y="15" width="345" height="160"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="160" id="XOC-bH-Va4"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This Caribbean country is home to Cou-Cou and Flying Fish. Rihanna the popular R&amp;B singer is from here." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biz-XI-h2W">
+                                                <rect key="frame" x="15" y="232" width="345" height="64"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="rYl-65-Aye" firstAttribute="centerX" secondItem="Enz-ju-bme" secondAttribute="centerX" id="9T5-9y-r8b"/>
+                                            <constraint firstItem="rYl-65-Aye" firstAttribute="top" secondItem="Enz-ju-bme" secondAttribute="top" constant="15" id="CsB-FT-1di"/>
+                                            <constraint firstAttribute="bottom" secondItem="biz-XI-h2W" secondAttribute="bottom" constant="7.5" id="HG2-LL-Mjw"/>
+                                            <constraint firstAttribute="trailing" secondItem="rYl-65-Aye" secondAttribute="trailing" constant="15" id="U2d-ud-U7T"/>
+                                            <constraint firstItem="biz-XI-h2W" firstAttribute="leading" secondItem="Enz-ju-bme" secondAttribute="leading" constant="15" id="cTx-WV-QLO"/>
+                                            <constraint firstAttribute="bottom" secondItem="biz-XI-h2W" secondAttribute="bottom" constant="7.5" id="fm3-YE-Qzb"/>
+                                            <constraint firstAttribute="trailing" secondItem="biz-XI-h2W" secondAttribute="trailing" constant="15" id="im3-sb-wqC"/>
+                                            <constraint firstItem="biz-XI-h2W" firstAttribute="centerX" secondItem="Enz-ju-bme" secondAttribute="centerX" id="mVk-hs-Eya"/>
+                                            <constraint firstItem="rYl-65-Aye" firstAttribute="leading" secondItem="Enz-ju-bme" secondAttribute="leading" constant="15" id="xRg-TH-mX9"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N89-SY-tym" userLabel="ButtonView">
+                                        <rect key="frame" x="0.0" y="303.5" width="375" height="303.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="v87-nq-bsV">
+                                                <rect key="frame" x="15" y="7.5" width="345" height="281"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGj-C8-INK">
+                                                        <rect key="frame" x="0.0" y="0.0" width="345" height="59"/>
+                                                        <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
+                                                        <state key="normal" title="A. Trinidad and Tobago ">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ove-5R-fTa">
+                                                        <rect key="frame" x="0.0" y="74" width="345" height="59"/>
+                                                        <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
+                                                        <state key="normal" title="B. Antigua and Barbuda">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBI-sh-6lR">
+                                                        <rect key="frame" x="0.0" y="148" width="345" height="59"/>
+                                                        <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
+                                                        <state key="normal" title="C. Saint Kitts and Nevis">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3lM-Ma-KsY">
+                                                        <rect key="frame" x="0.0" y="222" width="345" height="59"/>
+                                                        <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
+                                                        <state key="normal" title="D. Barbados">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="v87-nq-bsV" secondAttribute="trailing" constant="15" id="W5T-hW-Ezf"/>
+                                            <constraint firstItem="v87-nq-bsV" firstAttribute="leading" secondItem="N89-SY-tym" secondAttribute="leading" constant="15" id="doS-Cy-vIS"/>
+                                            <constraint firstAttribute="bottom" secondItem="v87-nq-bsV" secondAttribute="bottom" constant="15" id="gAs-MZ-Pu8"/>
+                                            <constraint firstItem="v87-nq-bsV" firstAttribute="centerX" secondItem="N89-SY-tym" secondAttribute="centerX" id="szY-LN-XJK"/>
+                                            <constraint firstItem="v87-nq-bsV" firstAttribute="top" secondItem="N89-SY-tym" secondAttribute="top" constant="7.5" id="zPo-eP-X8c"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ohf-f2-4AD" firstAttribute="width" secondItem="GPu-TY-DU5" secondAttribute="width" id="7uh-UA-ku9"/>
+                            <constraint firstItem="ohf-f2-4AD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9og-qo-IDL"/>
+                            <constraint firstAttribute="bottom" secondItem="ohf-f2-4AD" secondAttribute="bottom" id="COL-A0-WZI"/>
+                            <constraint firstItem="GPu-TY-DU5" firstAttribute="leading" secondItem="ohf-f2-4AD" secondAttribute="leading" id="Che-bI-9zY"/>
+                            <constraint firstItem="ohf-f2-4AD" firstAttribute="top" secondItem="GPu-TY-DU5" secondAttribute="bottom" id="F9e-cW-QeY"/>
+                            <constraint firstItem="GPu-TY-DU5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ouw-3R-fs8"/>
+                            <constraint firstItem="ohf-f2-4AD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sFd-PC-bau"/>
+                            <constraint firstItem="ohf-f2-4AD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="60" id="zlP-8o-iJ7" userLabel="Stack View.top = top "/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="flag1" width="151" height="75"/>
+    </resources>
+</document>
