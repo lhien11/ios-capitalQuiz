@@ -9,7 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var questionCounter: UILabel!
+    @IBOutlet weak var progressView: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var flagView: UIImageView!
+    
+    // Outlet for Buttons
+    @IBOutlet weak var optionA: UIButton!
+    @IBOutlet weak var optionB: UIButton!
+    @IBOutlet weak var optionC: UIButton!
+    @IBOutlet weak var optionD: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

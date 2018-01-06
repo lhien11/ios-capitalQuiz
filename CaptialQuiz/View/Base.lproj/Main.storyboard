@@ -147,6 +147,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="flagView" destination="rYl-65-Aye" id="2Hs-HO-6xU"/>
+                        <outlet property="optionA" destination="nGj-C8-INK" id="iE9-1w-UVK"/>
+                        <outlet property="optionB" destination="ove-5R-fTa" id="tMP-gw-Xw9"/>
+                        <outlet property="optionC" destination="KBI-sh-6lR" id="Efw-4z-VCL"/>
+                        <outlet property="optionD" destination="3lM-Ma-KsY" id="GVW-3R-YKl"/>
+                        <outlet property="progressView" destination="CpH-bV-xAh" id="PCr-gu-vPh"/>
+                        <outlet property="questionCounter" destination="biz-XI-h2W" id="yJj-Dn-I4k"/>
+                        <outlet property="scoreLabel" destination="cCJ-U6-Kji" id="1NS-9B-bzx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
