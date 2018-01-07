@@ -9,10 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+
     @IBOutlet weak var questionCounter: UILabel!
-    @IBOutlet weak var progressView: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var progressView: UIView!
     @IBOutlet weak var flagView: UIImageView!
+    @IBOutlet weak var questionLabel: UILabel!
     
     // Outlet for Buttons
     @IBOutlet weak var optionA: UIButton!
@@ -25,11 +27,18 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func answerPressed(_ sender: UIButton) {
+        if sender.tag == 1 {
+            print("option a")
+        } else if sender.tag == 2 {
+            print("option b")
+        } else if sender.tag == 3 {
+            print("option c")
+        } else {
+            print("option d")
+        }
     }
-
+    
 
 }
 

@@ -93,6 +93,9 @@
                                                         <state key="normal" title="A. Trinidad and Tobago ">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="slM-Cv-uzJ"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ove-5R-fTa">
                                                         <rect key="frame" x="0.0" y="74" width="345" height="59"/>
@@ -101,6 +104,9 @@
                                                         <state key="normal" title="B. Antigua and Barbuda">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3gg-b2-Fd6"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBI-sh-6lR">
                                                         <rect key="frame" x="0.0" y="148" width="345" height="59"/>
@@ -109,6 +115,9 @@
                                                         <state key="normal" title="C. Saint Kitts and Nevis">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wyX-iA-mP8"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3lM-Ma-KsY">
                                                         <rect key="frame" x="0.0" y="222" width="345" height="59"/>
@@ -118,6 +127,9 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SoS-Vo-Khf"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -153,8 +165,9 @@
                         <outlet property="optionB" destination="ove-5R-fTa" id="tMP-gw-Xw9"/>
                         <outlet property="optionC" destination="KBI-sh-6lR" id="Efw-4z-VCL"/>
                         <outlet property="optionD" destination="3lM-Ma-KsY" id="GVW-3R-YKl"/>
-                        <outlet property="progressView" destination="CpH-bV-xAh" id="PCr-gu-vPh"/>
-                        <outlet property="questionCounter" destination="biz-XI-h2W" id="yJj-Dn-I4k"/>
+                        <outlet property="progressView" destination="Og8-r7-rog" id="RAN-Up-IKs"/>
+                        <outlet property="questionCounter" destination="CpH-bV-xAh" id="Rn1-Fy-zVE"/>
+                        <outlet property="questionLabel" destination="biz-XI-h2W" id="UP1-kB-lvh"/>
                         <outlet property="scoreLabel" destination="cCJ-U6-Kji" id="1NS-9B-bzx"/>
                     </connections>
                 </viewController>
